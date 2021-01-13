@@ -1,0 +1,18 @@
+#nav {
+  
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
+  padding: 25px;
+  display: grid;
+  // display: flex;
+  // place-items: center;
+  #menu {
+    position: absolute;
+    right: 0;
+    // float: right;
+    span {
+      margin-right: 40px;
+    }
+  }
+}
