@@ -5,15 +5,19 @@ import './App.scss';
 // components
 import Nav from "./components/Nav";
 import ItemListContainer from "./pages/ItemListContainer";
+import ShoppingCart from "./pages/ShoppingCart";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
       <Router>
+        <Nav />
         <Switch>
           <Route exact={true} path="/">
-            <ItemListContainer id="ItemListContainer" />
+            <ItemListContainer />
+          </Route>
+          <Route path="/shoppingcart">
+            <ShoppingCart />
           </Route>
         </Switch>
       </Router>

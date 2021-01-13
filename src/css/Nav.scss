@@ -11,8 +11,13 @@
     position: absolute;
     right: 0;
     // float: right;
-    span {
+    .item_list_container {
       margin-right: 40px;
+      text-decoration: none;
+      color: gray;  // 링크를 클릭했더라도 색상 변경 방지
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
